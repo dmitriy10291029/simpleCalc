@@ -1,5 +1,7 @@
 #include "calculus.h"
 
+
+
 int PrintError() {
     std::cout << "wrong input\n";
     return ERROR_VALUE;
