@@ -24,10 +24,10 @@ int Calc(int argc, char* argv[]) {
         a = std::stoi(argv[1]);
         b = std::stoi(argv[2]);
     } else return PrintError();
-
-    if (strcmp(argv[3], "+") == 0) return a + b;
-    if (strcmp(argv[3], "-") == 0) return a - b;
-    if (strcmp(argv[3], "*") == 0) return a * b;
-    if (strcmp(argv[3], "/") == 0) return a / b;
+    std::string arg = argv[3];
+    if (arg == "+") return a + b;
+    if (arg == "-") return a - b;
+    if (arg == "*") return a * b;
+    if (arg == "/") return a / b;
     return PrintError();
 }
