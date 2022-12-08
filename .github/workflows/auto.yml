@@ -20,4 +20,4 @@ jobs:
       run: cd build && make
 
     - name: Units
-      run: ./build/tests/number_tests
+      run: ./build/tests/simple_calc_tests
