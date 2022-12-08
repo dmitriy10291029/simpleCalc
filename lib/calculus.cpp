@@ -25,7 +25,7 @@ int Calc(int argc, char* argv[]) {
         b = std::stoi(argv[2]);
     } else return PrintError();
     std::string arg = argv[3];
-    if (arg == "+") return a + b;
+    if (arg == "+") return a + b + 1;
     if (arg == "-") return a - b;
     if (arg == "*") return a * b;
     if (arg == "/") return a / b;
