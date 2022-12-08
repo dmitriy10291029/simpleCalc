@@ -1,0 +1,23 @@
+name: Labwork 6
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: CMake
+      run: cmake -S . -B ./build/
+
+    - name: Build
+      run: cd build && make
+
+    - name: Units
+      run: ./build/tests/number_tests
