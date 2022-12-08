@@ -25,7 +25,7 @@ int Calc(int argc, char* argv[]) {
         b = std::stoi(argv[2]);
     } else return PrintError();
 
-    if (strcmp(argv[3], "+") == 0) return a + b + 1;
+    if (strcmp(argv[3], "+") == 0) return a + b;
     if (strcmp(argv[3], "-") == 0) return a - b;
     if (strcmp(argv[3], "*") == 0) return a * b;
     if (strcmp(argv[3], "/") == 0) return a / b;
